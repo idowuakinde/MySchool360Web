@@ -1,0 +1,120 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Copy of rpt_PAYROLL_Staff_Payslip.aspx.vb" Inherits="modules_reports_rpt_PAYROLL_Staff_Payslip" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="../../StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" width="880" class="borderedTableGrey">
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="80%">
+                    <asp:Label ID="lblHeader" runat="server" Font-Bold="True" Font-Size="Small" 
+                        Text="REPORTS > PAYROLL REPORTS > STAFF PAYSLIPS"></asp:Label>
+                    <br />
+                    <br />
+                    PRINTED ON: <b><%=FormatDateTime(Now, DateFormat.LongDate).ToUpper & " " & FormatDateTime(Now, DateFormat.LongTime).ToUpper%></b><br />&nbsp;
+                  </td>
+                  <td align="right" valign="top"><input name="btnPrint" type="button" class="defaultButtonStyle" id="btnPrint" value="   Print This Page   " onclick="javascript:PrintPage()" /></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <asp:GridView ID="gvUsers" runat="server" CssClass="noBorderedMenuTable" 
+                    AllowPaging="True" AutoGenerateColumns="False" 
+                    DataKeyNames="StaffId" DataSourceID="dsSqlGetData" AllowSorting="True" 
+                    CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%" 
+                        PageSize="20" >
+            <Columns>
+                <asp:TemplateField>
+                    <ItemTemplate>
+                        <asp:HyperLink ID="hlnk_Payslip" runat="server"  Text="PRINT PAYSLIP" NavigateUrl='<%# "rpt_payroll_staff_payslip_single.aspx?a=" & Databinder.Eval(Container.DataItem, "StaffId").ToString %>'></asp:HyperLink>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Staff Code" SortExpression="StaffCode">
+                    <EditItemTemplate>
+                        <asp:Label ID="TextBox1" runat="server" Text='<%# Bind("StaffCode") %>'></asp:Label>
+                   </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("StaffCode") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Staff Name" SortExpression="StaffName">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("StaffName") %>' 
+                            Columns="20"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label8" runat="server" Text='<%# Bind("StaffName") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Gender" SortExpression="Gender">
+                    <EditItemTemplate>
+                        <asp:DropDownList ID="DropDownList16" runat="server" 
+                            CssClass="defaultFormElementStyle" SelectedValue='<%# Bind("Gender") %>'>
+                            <asp:ListItem Value="F">Female</asp:ListItem>
+                            <asp:ListItem Value="M">Male</asp:ListItem>
+                        </asp:DropDownList>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Common.GetMaleOrFemale(Databinder.Eval(Container.DataItem, "Gender").ToString) %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Location" SortExpression="LocationName">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("LocationName") %>' Columns="30"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label9" runat="server" Text='<%# Bind("LocationName") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Department" SortExpression="DepartmentName">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("DepartmentName") %>' Columns="30"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label9" runat="server" Text='<%# Bind("DepartmentName") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+            <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+            <RowStyle HorizontalAlign="Left" VerticalAlign="Top" BackColor="#FFFBD6" 
+                ForeColor="#333333" />
+            <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" 
+                HorizontalAlign="Left" />
+            <EditRowStyle CssClass="defaultFormElementStyle" />
+            <AlternatingRowStyle BackColor="White" />
+        </asp:GridView>
+                    <asp:SqlDataSource ID="dsSqlGetData" runat="server" ConnectionString="<%$ ConnectionStrings:iTecon %>"
+                        SelectCommand="SELECT [StaffId], [StaffCode], [MaritalStatus], [WeddingDate], [Gender], [DateOfBirth], [ConfirmationStatus], [RetirementStatus], [Surname], [OtherNames], UPPER(Surname + ' ' + OtherNames) AS StaffName, [Department], b.DepartmentName, [DateOfEmployment], [Email], a.[DesignationId], c.DesignationName, a.[JobLevelId], d.JobLevelName, a.[LocationId], e.LocationName, [Residence], [PermanentResidence], [Telephone], a.[ReligionId], f.ReligionName, [Hometown], a.[LGAOfOriginId], g.LgaName + ' LGA (' + h.StateName + ')' AS LgaName, a.[BankId], i.BankName, [BankAccountNumber], [Visa], [EyeColour], [Height], [Weight], [TrouserLength], [ShoeSize], [BloodGroup], [Genotype], [Hobbies], a.[AreaOfInterest], k.DepartmentName AS AlternativeDepartment, [VisaType], [Coop_MonthlyDeduction], [Coop_LoanRepayment], [MaxMedical], [NextOfKinName], [NextOfKinAddress], [NextOfKinRelationship] FROM [dbo].[HR_Staff_Base] a INNER JOIN dbo.[Core_Department] b ON a.Department = b.DepartmentId INNER JOIN dbo.[HR_Designation] c ON a.DesignationId = c.DesignationId INNER JOIN dbo.[HR_JobLevel] d ON a.JobLevelId = d.JobLevelId INNER JOIN dbo.[HR_Location] e ON a.LocationId = e.LocationId INNER JOIN dbo.[HR_Religion] f ON a.ReligionId = f.ReligionId INNER JOIN dbo.[Core_Lga] g ON a.LgaOfOriginId = g.LgaId INNER JOIN dbo.[Core_State] h ON g.StateId = h.StateId INNER JOIN dbo.[HR_Bank] i ON a.BankId = i.BankId INNER JOIN dbo.[Core_Department] k ON a.AreaOfInterest = k.DepartmentId ORDER BY StaffName ">
+                    </asp:SqlDataSource>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <hr color="black" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;
+                    </td>
+            </tr>
+        </table>
+    
+      </div>
+    </form>
+</body>
+</html>

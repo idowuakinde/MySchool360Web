@@ -1,0 +1,5 @@
+﻿
+Partial Class modules_reports_rpt_PAYROLL_Staff_PaySlip_Small
+    Inherits System.Web.UI.Page
+
+End Class

@@ -1,0 +1,126 @@
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+.binaryFont{
+font-family:July, Binary;
+font-size:8px;
+color:#333333;
+}
+
+body {
+	SCROLLBAR-FACE-COLOR: #C5C5C5; SCROLLBAR-SHADOW-COLOR: #C5C5C5; COLOR: #C5C5C5; SCROLLBAR-3DLIGHT-COLOR: #C5C5C5; SCROLLBAR-ARROW-COLOR: #666666; SCROLLBAR-TRACK-COLOR: #C5C5C5; SCROLLBAR-DARKSHADOW-COLOR: #C5C5C5 SCROLLBAR-BASE-COLOR: #C5C5C5;
+	background-color: White;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right:0px;
+	margin-bottom: 0px;
+}
+
+TEXTAREA {
+	SCROLLBAR-FACE-COLOR: #f5f7f8; SCROLLBAR-SHADOW-COLOR: #e5e7e8; COLOR: #5a5f60; SCROLLBAR-3DLIGHT-COLOR: #f5f7f8; SCROLLBAR-ARROW-COLOR: #666666; SCROLLBAR-TRACK-COLOR: #d8d9de; SCROLLBAR-DARKSHADOW-COLOR: #f5f7f8; SCROLLBAR-BASE-COLOR: #d8d9de
+}
+
+a {
+	color:#232323;
+}
+
+a:link {
+	text-decoration: none;
+	color:#232323;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #232323;
+}
+
+a:hover {
+	text-decoration: none;
+	BACKGROUND: #000000; COLOR: #ffffff;
+}
+
+a:active {
+	text-decoration: none;
+	color: #666666;
+}
+
+input {
+SCROLLBAR-FACE-COLOR: #f5f7f8; SCROLLBAR-SHADOW-COLOR: #e5e7e8; COLOR: #5a5f60; SCROLLBAR-3DLIGHT-COLOR: #f5f7f8; SCROLLBAR-ARROW-COLOR: #666666; SCROLLBAR-TRACK-COLOR: #d8d9de;  SCROLLBAR-DARKSHADOW-COLOR: #f5f7f8; SCROLLBAR-BASE-COLOR: #d8d9de;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#333333;
+	background-color:#FFFFFF;
+	border:1px;
+	border-color:#cccccc;
+	border-style:solid;
+	}
+
+.styleBox{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px;}
+
+.fontType1{ color: #706C52;}
+
+.coloredBg{background-color:#E7E6DE;}
+
+.coloredBg2{background-color:#f5f7f8;}
+
+.coloredBg3{background-color: #0000CD;}
+
+.coloredBg4{background-color: Silver;}
+
+.coloredBgGry2{background-color: #999999;}
+
+.coloredBgGry3{background-color: #CACACA;}
+
+.coloredBg5{background-color: #00008B;}
+
+
+.textHeaders{ color:#FFFFFF; font-size: 18px; font-style:oblique;}
+
+.coloredBlackBg{background-color:#000000;}
+
+.coloredBottomBrownBg{background-color:#9A4E4E;}
+
+.whiteFont{color:#FFFFFF;}
+
+.WhiteBg{background-color:#FFFFFF;}
+
+.imageBg{background-image:url(../iBin/bg.jpg); background-repeat:repeat;}
+
+.tableWithBottomBorder{ border-bottom: 1px solid #D4D4D4;}
+
+.funkyFont{color:#FFFFFF; background-color:#000080}
+
+.bigFont{color:#000000; font-size:11px; font-weight:bolder;}
+
+.fontBoldBlk{ color: Black;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;  font-weight: bold;   }
+
+.fontBoldBlkBig{ color: Black;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 12px;  font-weight: bold;   }
+
+.fontRed{ color: Red;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px; }
+
+.fontBoldRed{ color: Red;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;  font-weight: bold;   }
+
+.fontBoldRedBig{ color: Red;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 12px;  font-weight: bold;   }
+
+.fontBlu{ color: Blue;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;}
+
+.fontBoldBlu{ color: Blue;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;  font-weight: bold;   }
+
+.fontBoldBluBig{ color: Blue;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 12px;  font-weight: bold;   }
+
+.fontWht{ color: White;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;}
+
+.fontBoldWhtBig{ color: White;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;  font-weight: bold;   }
+
+.fontBoldWht{ color: White;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 12px;  font-weight: bold;   }
+
+.fontMaroon{ color: Maroon;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;}
+
+.fontBoldMaroonBig{ color: Maroon;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 10px;  font-weight: bold;   }
+
+.fontBoldMaroon{ color: Maroon;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 12px;  font-weight: bold;   }
+
+.fontTopHeader{ color: #A9A9A9;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 20px;  font-weight: bold;   }

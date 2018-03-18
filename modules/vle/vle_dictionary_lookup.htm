@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MySchool360 - Quick Dictionary</title>
+</head>
+<body>
+
+
+            <!--dictionary lookup box by TheFreeDictionary.com-->
+            <style>#dictionarybox TD, INPUT, SELECT {font-size:10pt;}</style>
+            <form action="http://www.thefreedictionary.com/_/partner.aspx" method="get" target="_self" name="dictionary"
+            style="display:inline;margin:0">
+            <table id="dictionarybox" cellspacing="0" cellpadding="3" style="border:1px #000000 solid;font-family:;width:230px;background-color:;color:#000000"><tr>
+            <td bgcolor="#FFFFFF" style="border-bottom:1px #000000 solid"><img src="http://img.tfd.com/Help.gif" width="25" height="25"/></td>
+            <td bgcolor="#FFFFFF" style="border-bottom:1px #000000 solid" colspan="2" nowrap="yes"><a
+            style="text-decoration:none;color:#000000" href="http://www.thefreedictionary.com"><div style="font-size:12pt"><b>Online Reference</b></div>
+            <div style="font-size:8pt">Dictionary, Encyclopedia &amp; more</div></a></td></tr>
+            <tr><td align="center">Word:<br/>
+            <img id=dictionarybox_img_toggle src="http://img.tfd.com/toggle/b-down.gif" style="cursor:hand;cursor:pointer"
+            onclick="var s=document.getElementById('dictionarybox_source').style;this.src='http://img.tfd.com/toggle/b-'+(s.display?'up.gif':'down.gif');s.display=(s.display?'':'none')"/></td>
+            <td colspan="2"><input name="Word" value="" size="50"/></td></tr>
+            <tr id="dictionarybox_source" style="display:none"><td align=right>Look in:</td><td colspan=2 style="font-size:8pt;text-align:left" id="boxsource_td"><style>#boxsource_td A {color:#000000;text-decoration:none}</style>
+            <!--[if IE]><style>#boxsource_td INPUT {height:12pt}</style><![endif]-->
+            <input type="radio" name="Set" value="www" checked="yes"/>Dictionary &amp; thesaurus<br/>
+            <input type="radio" name="Set" value="medical-dictionary"/>Medical Dictionary<br/>
+            <input type="radio" name="Set" value="legal-dictionary"/>Legal Dictionary<br/>
+            <input type="radio" name="Set" value="financial-dictionary"/>Financial Dictionary<br/>
+            <input type="radio" name="Set" value="acronyms"/>Acronyms<br/>
+            <input type="radio" name="Set" value="idioms"/>Idioms<br/>
+            <input type="radio" name="Set" value="encyclopedia2"/>Encyclopedia<br/>
+            <input type="radio" name="Set" value="encyclopedia"/>Wikipedia<br/>
+            <input type="radio" name="Set" value="periodicals"/>Periodicals<br/>
+            <input type="radio" name="Set" value="literature"/>Literature
+            <div style="cursor:hand;cursor:pointer"
+            onclick="var s=document.getElementById('dictionarybox_ol').style;document.getElementById('dictionarybox_ol_img').src='http://img.tfd.com/toggle/b-'+(s.display?'up.gif':'down.gif');s.display=(s.display?'':'none')"><img 
+            id=dictionarybox_ol_img src="http://img.tfd.com/toggle/b-down.gif"/>Other languages:</div><div id="dictionarybox_ol" style="display:none">
+            <input type="radio" name="Set" value="es"/>Spanish Dictionary<br/>
+            <input type="radio" name="Set" value="de"/>German Dictionary<br/>
+            <input type="radio" name="Set" value="fr"/>French Dictionary<br/>
+            <input type="radio" name="Set" value="it"/>Italian Dictionary<br/>
+            <input type="radio" name="Set" value="zh"/>Chinese Dictionary<br/>
+            <input type="radio" name="Set" value="pt"/>Portuguese Dictionary<br/>
+            <input type="radio" name="Set" value="nl"/>Dutch Dictionary<br/>
+            <input type="radio" name="Set" value="no"/>Norwegian Dictionary<br/>
+            <input type="radio" name="Set" value="el"/>Greek Dictionary<br/>
+            <input type="radio" name="Set" value="ru"/>Russian Dictionary</div>
+            </td></tr>
+            <tr><td align="right">by:</td>
+            <td><select name="mode"><option value="w">Word</option><option value="s">Starts with</option>
+            <option value="e">Ends with</option><option value="d">Mentions</option></select></td>
+            <td align=right><input type="submit" name="submit" value="Look it up"/></td></tr></table></form>
+            <!--end of dictionary lookup box-->
+
+
+</body>
+</html>

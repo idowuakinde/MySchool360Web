@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rstPayer" value="name:CustomerID;datatype:numeric,name:DistrictCode;datatype:varchar,name:CustomerName;datatype:varchar,name:BillingAddress;datatype:varchar,name:SyncStatus;datatype:char" />
+</info>

@@ -1,0 +1,331 @@
+﻿A:link {
+	COLOR: #333333
+}
+A:visited {
+	COLOR: #333333
+}
+A:hover {
+	COLOR: #000000
+}
+input {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; FONT-SIZE: 11px; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ffffff
+}
+BODY {
+	BORDER-RIGHT: white 1px solid; BORDER-TOP: white 1px solid; FONT-SIZE: 11px; BORDER-LEFT: white 1px solid; BORDER-BOTTOM: white 1px solid; FONT-FAMILY: tahoma
+}
+.smallTextStyle {
+	FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-FAMILY: tahoma; BACKGROUND-COLOR: transparent
+}
+.smallerTextStyle {
+	FONT-SIZE: 9px; FONT-FAMILY: tahoma; BACKGROUND-COLOR: transparent
+}
+.defaultTextStyle {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 0px; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; CURSOR: default; COLOR: black; FONT-FAMILY: tahoma; HEIGHT: 15px; BACKGROUND-COLOR: transparent
+}
+.defaultHeaderTextStyle {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; CURSOR: default; COLOR: black; FONT-FAMILY: tahoma; LETTER-SPACING: 1px; HEIGHT: 15px; BACKGROUND-COLOR: transparent
+}
+.defaultHeaderTextStyleTopAligned {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; VERTICAL-ALIGN: top; CURSOR: default; COLOR: black; FONT-FAMILY: tahoma; LETTER-SPACING: 1px; HEIGHT: 15px; BACKGROUND-COLOR: transparent
+}
+.defaultHeaderTextStyleWhite {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; CURSOR: default; COLOR: white; FONT-FAMILY: tahoma; LETTER-SPACING: 1px; HEIGHT: 15px; BACKGROUND-COLOR: transparent
+}
+.transparentButtonStyle {
+	BORDER-RIGHT: 2px; PADDING-RIGHT: 2px; BORDER-TOP: 2px; PADDING-LEFT: 0px; FONT-SIZE: 11px; MARGIN: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 2px; CURSOR: hand; COLOR: black; BORDER-BOTTOM: 2px; FONT-FAMILY: tahoma; HEIGHT: 15px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+.transparentTextBoxStyle {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VISIBILITY: hidden; BORDER-LEFT: 0px; COLOR: black; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: transparent
+}
+.hidden_control_style {
+	VISIBILITY: hidden; WIDTH: 7px
+}
+.defaultButtonStyle {
+	BORDER-RIGHT: #3b6e6e 1px solid; BORDER-TOP: #3b6e6e 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #3b6e6e 1px solid; CURSOR: hand; BORDER-BOTTOM: #3b6e6e 1px solid; FONT-FAMILY: tahoma; HEIGHT: 20px; BACKGROUND-COLOR: #baccd5
+}
+.loginButtonStyle {
+	BORDER-RIGHT: #aaaaaa 1px solid; 
+	BORDER-TOP: #aaaaaa 1px solid; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: #aaaaaa 1px solid; 
+	CURSOR: hand; 
+	BORDER-BOTTOM: #aaaaaa 1px solid; 
+	FONT-FAMILY: tahoma; 
+	HEIGHT: 25px; 
+	font-weight: bold;
+	color: #FFF;
+	/*BACKGROUND-COLOR: #cccccc*/
+}
+.loginButtonStyleForLoginPage {
+	BORDER-RIGHT: #aaaaaa 1px solid; 
+	BORDER-TOP: #aaaaaa 1px solid; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: #aaaaaa 1px solid; 
+	CURSOR: hand; 
+	BORDER-BOTTOM: #aaaaaa 1px solid; 
+	FONT-FAMILY: tahoma; 
+	HEIGHT: 35px; 
+	/*font-weight: bold;*/
+	color: #FFF;
+	FONT-SIZE: 18px;
+}
+.redButtonStyle {
+	BORDER-RIGHT: #3b6e6e 1px solid; BORDER-TOP: #3b6e6e 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: #3b6e6e 1px solid; CURSOR: hand; BORDER-BOTTOM: #3b6e6e 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: red
+}
+.orig_defaultButtonStyle {
+	BORDER-RIGHT: #3b6e6e 1px solid; BORDER-TOP: #3b6e6e 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #3b6e6e 1px solid; CURSOR: hand; BORDER-BOTTOM: #3b6e6e 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #efedf1
+}
+.defaultTextBoxStyle {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; FONT-SIZE: 11px; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: gray 1px solid; FONT-FAMILY: tahoma; HEIGHT: 19px; BACKGROUND-COLOR: #ffffff
+}
+.defaultFormElementStyle {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; FONT-SIZE: 11px; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ffffff
+}
+.defaultFormElementStyleLarge {
+	FONT-WEIGHT: bold; FONT-SIZE: 26px; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ffffff
+}
+.defaultFormElementStyleLargeForLoginPage {
+	FONT-SIZE: 18px; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ffffff
+}
+.defaultFormElementStyleRightAligned
+{
+	border-right: silver 1px solid;
+	border-top: silver 1px solid;
+	font-size: 11px;
+	border-left: silver 1px solid;
+	border-bottom: silver 1px solid;
+	font-family: tahoma;
+	background-color: #ffffff;
+	text-align: right;
+}
+.borderlessTextBoxStyle {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ffffff
+}
+.pageHeaderStyle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: black; FONT-FAMILY: Arial
+}
+.pageHeaderStyleAHALL {
+	FONT-WEIGHT: bold; FONT-SIZE: 26px; COLOR: #670001; FONT-FAMILY: Arial
+}
+.pageHeaderStylePrintPDF {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #670001; FONT-FAMILY: Arial
+}
+.pageHeaderStylePrintPDFRemarks {
+	font-size: 14px
+}
+.pageHeaderStyleLBIHS_Newsletter {
+	FONT-WEIGHT: bold; FONT-SIZE: 46px; COLOR: white; FONT-FAMILY: Times New Roman
+}
+.pageHeaderStyleAMMA {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #F4A100; FONT-FAMILY: Arial
+}
+.currentTabStyle {
+	BORDER-RIGHT: darkgray 1px ridge; BORDER-TOP: darkgray 1px ridge; FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: darkgray 1px ridge; WIDTH: 190px; PADDING-TOP: 5px; BORDER-BOTTOM: 0px; FONT-FAMILY: Arial; HEIGHT: 30px; TEXT-ALIGN: center
+}
+.linkTabStyleLeft {
+	BORDER-RIGHT: 0px; BORDER-TOP: darkgray 1px ridge; FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: darkgray 1px ridge; WIDTH: 190px; PADDING-TOP: 5px; BORDER-BOTTOM: darkgray 1px ridge; FONT-FAMILY: Arial; HEIGHT: 30px; BACKGROUND-COLOR: whitesmoke; TEXT-ALIGN: center
+}
+.linkTabStyleRight {
+	BORDER-RIGHT: darkgray 1px ridge; BORDER-TOP: darkgray 1px ridge; FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; WIDTH: 190px; PADDING-TOP: 5px; BORDER-BOTTOM: darkgray 1px ridge; FONT-FAMILY: Arial; HEIGHT: 30px; BACKGROUND-COLOR: whitesmoke; TEXT-ALIGN: center
+}
+.linkTabStyleBottom {
+	BORDER-RIGHT: 0px; BORDER-TOP: darkgray 0px; FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: darkgray 0px; WIDTH: 190px; PADDING-TOP: 5px; BORDER-BOTTOM: darkgray 1px ridge; FONT-FAMILY: Arial; HEIGHT: 30px; TEXT-ALIGN: center
+}
+.linkTabStyleNone {
+	BORDER-RIGHT: 0px; BORDER-TOP: darkgray 1px ridge; FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; WIDTH: 190px; PADDING-TOP: 5px; BORDER-BOTTOM: darkgray 1px ridge; FONT-FAMILY: Arial; HEIGHT: 30px; BACKGROUND-COLOR: whitesmoke; TEXT-ALIGN: center
+}
+.customButtonStyleTransparent {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #ffffff 1px solid; CURSOR: hand; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left
+}
+.menuLabelStyle {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: maroon; FONT-FAMILY: Arial
+}
+.miscText {
+	FONT-SIZE: 11px; FONT-FAMILY: tahoma
+}
+.popUpWindowLink {
+	CURSOR: hand; COLOR: blue
+}
+.liveVersionLoginBackground {
+	BACKGROUND-POSITION: center center; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(images/background.jpg); BACKGROUND-REPEAT: no-repeat
+}
+.titleInfoStyle {
+	CURSOR: hand
+}
+.dataLabelStyle {
+	FONT-SIZE: 11px; FONT-FAMILY: tahoma
+}
+.textBoxLabel {
+	BORDER-TOP-WIDTH: 0px; FONT-WEIGHT: normal; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: middle; COLOR: black; FONT-FAMILY: tahoma; HEIGHT: 19px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.dataInTableStyle {
+	FONT-SIZE: 11px; VERTICAL-ALIGN: middle; COLOR: black; FONT-FAMILY: tahoma; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+.controlTDElementStyle {
+	
+}
+.borderedTable {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.borderedTableHeavyTopAndBottom {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 5px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 5px solid
+}
+.borderedTableGrey {
+	border: 1px solid #E5E5E5;
+}
+.noBorderedTable {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.noBorderedMenuTable {
+	FONT-SIZE: 11px;
+	VERTICAL-ALIGN: middle;
+	COLOR: black;
+	FONT-FAMILY: tahoma;
+	BACKGROUND-COLOR: transparent;
+	TEXT-ALIGN: left;
+	border: 0px none;
+}
+.whiteFrame {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: gray 1px solid
+}
+.selected {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 14px; VERTICAL-ALIGN: middle; BORDER-LEFT: #aaaaaa 1px solid; WIDTH: 160px; PADDING-TOP: 3px; BORDER-BOTTOM: #aaaaaa 1px solid; FONT-FAMILY: tahoma; HEIGHT: 25px; BACKGROUND-COLOR: #000000
+}
+.labelBullets {
+	WIDTH: 2px; HEIGHT: 2px
+}
+.cssHyperLink:link {
+	FONT-SIZE: 11px; COLOR: blue; FONT-FAMILY: tahoma
+}
+.cssHyperLink:visited {
+	FONT-SIZE: 11px; COLOR: blue; FONT-FAMILY: tahoma
+}
+.cssHyperLink:hover {
+	FONT-SIZE: 11px; COLOR: blue; FONT-FAMILY: tahoma
+}
+.cssFlatControl {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; FONT-SIZE: 11px; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: gray 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ffffff
+}
+.cssReportLabel {
+	COLOR: #000000
+}
+.BorderedDataInTable {
+	BORDER-RIGHT: darkgray 1px ridge; BORDER-TOP: darkgray 1px ridge; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; BORDER-LEFT: darkgray 1px ridge; COLOR: black; BORDER-BOTTOM: darkgray 1px ridge; FONT-FAMILY: tahoma; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+.noBorderedDataInTable {
+	BORDER-RIGHT: darkgray 0px ridge; BORDER-TOP: darkgray 0px ridge; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; BORDER-LEFT: darkgray 0px ridge; COLOR: black; BORDER-BOTTOM: darkgray 0px ridge; FONT-FAMILY: tahoma; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+.cssPadding_2 {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.cssBlue {
+	BACKGROUND-COLOR: #000033
+}
+.cssTransparent {
+	BACKGROUND-COLOR: #ffffff
+}
+.cssFullRow {	
+}
+.frameLeft {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: gray;
+	border-right-color: gray;
+	border-bottom-color: gray;
+	border-left-color: gray;
+}
+.frameTop {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: gray;
+	border-right-color: gray;
+	border-bottom-color: gray;
+	border-left-color: gray;
+}
+.frameBottom {
+	border: 1px solid gray;
+}
+.SilverText {
+	color: silver;
+}
+.centeredText {
+	text-align: center;
+}
+.style16 {
+	font-size: 18px
+}
+.borderedTableWhite {
+	border: 1px solid #FFFFFF;
+}
+.NoBorders {
+	border: none;
+}
+.WhiteText {
+	color: white;
+}
+.HomePageTitleText {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.HomePageTitleText2 {
+	font-family: tahoma;
+	/*font-weight: bold;*/
+}
+.HomePageTitleText2 {
+	font-size: 18px;
+}
+.borderedTableThicker {
+	border: 3px solid;
+}
+.verticalText {
+	display: block;
+	position: absolute;
+	font-weight:bold;
+	/*	right: -5px;
+	top: 15px;*/
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	font-size: 14px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.emphasisText
+{
+	font-weight:bold;
+	font-size: 15px;
+}
+.rightAligned
+{
+	text-align: right;
+}
+.loginTextStyle
+{
+	font-size: 15px;
+	font-family: tahoma;
+}
+.birthDayDialog {
+    padding: 15px;
+    background: yellow;
+    border: 1px solid #999;
+
+    position: fixed;  /* This is the magic - stays during scroll. */
+    top: 5%; left: 20%;  /* These coordinates are now in 
+                         relation to the first parent
+                         with non-static positioning (body) */
+    width: 450px;
+}
+ .hidden {
+     display: none;
+}

@@ -1,0 +1,71 @@
+BODY {FONT-WEIGHT: 500; FONT-SIZE: 9px; COLOR: black; FONT-FAMILY: verdana, arial}
+
+A {FONT-SIZE: 10px; COLOR: maroon; FONT-FAMILY: verdana, Impact, arial; TEXT-DECORATION: none}
+
+A:active {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: maroon; FONT-FAMILY: Verdana, arial, Impact; TEXT-DECORATION: none}
+
+A:visited {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: maroon; FONT-FAMILY: Verdana, arial, Impact; TEXT-DECORATION: none}
+
+A:link {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: maroon; FONT-FAMILY: Verdana, arial, Impact; TEXT-DECORATION: none}
+
+TD {FONT-WEIGHT: 500; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, 'Trebuchet MS'; TEXT-DECORATION: none}
+
+A:hover {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: maroon; FONT-FAMILY: verdana, arial, impact; TEXT-DECORATION: underline}
+
+.text {FONT-WEIGHT: normal;	FONT-SIZE: 9px;	FONT-FAMILY: Verdana, Arial, 'Trebuchet MS';TEXT-ALIGN: justify;color: #000000;}
+
+.text0 {FONT-WEIGHT: bold;	FONT-SIZE: 10px;	FONT-FAMILY: Verdana, Arial, 'Trebuchet MS';TEXT-ALIGN: justify;color: #000000;}
+
+.text1 {FONT-WEIGHT: normal; FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, 'Trebuchet MS'; TEXT-ALIGN: justify;color: #0000FF;}
+
+.text11 {FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, 'Trebuchet MS'; TEXT-ALIGN: justify;color: #0000FF;}
+
+.text2 {FONT-WEIGHT: normal;FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, 'Trebuchet MS';	TEXT-ALIGN: justify;color: #FF0000;}
+
+.text22 {FONT-WEIGHT: bold;FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, 'Trebuchet MS';	TEXT-ALIGN: justify;color: #FF0000;}
+
+.heading {FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #538dd6; FONT-FAMILY: Verdana, arial, 'Trebuchet MS'}
+
+.text3 {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #538dd6; FONT-FAMILY: Verdana, arial, 'Trebuchet MS'}
+
+.mainHeading {FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana, arial, 'Trebuchet MS'}
+
+.contentHeading {FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #003366; FONT-FAMILY: Verdana, arial, 'Trebuchet MS'}
+
+.innerHeading {FONT-WEIGHT: bolder; FONT-SIZE: 12px; COLOR: #3c566e; FONT-FAMILY: Verdana, arial}
+
+INPUT {FONT-SIZE: 11px; COLOR: navy; FONT-FAMILY: Verdana; border: 1px solid #666666}
+
+SELECT {FONT-SIZE: 11px; COLOR: navy; FONT-FAMILY: Verdana; border: 1px solid #666666}
+
+.content {FONT-WEIGHT: lighter; FONT-SIZE: 11px; COLOR: #3c566e; FONT-FAMILY: Verdana, arial; TEXT-ALIGN: justify}
+
+.desclaimer {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #58748b; FONT-FAMILY: Verdana, Arial}
+
+.hyper {FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: arial}
+
+.bottomNav {FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: darkblue; FONT-FAMILY: Verdana, Arial}
+
+TYPE {FONT-SIZE: 11px; COLOR: navy; FONT-FAMILY: arial, Verdana}
+
+TEXTAREA {FONT-SIZE: 11px; COLOR: navy; FONT-FAMILY: Verdana, Arial}
+
+.coloredBg{background-color:#E7E6DE;}
+
+.coloredBg2{background-color:#f5f7f8;}
+
+.coloredBg3{background-color: #0000CD;}
+
+.coloredBg4{background-color: Silver;}
+
+.coloredBgGry2{background-color: #999999;}
+
+.coloredBgGry3{background-color: #CACACA;}
+
+.coloredBg5{background-color: #00008B;}
+
+.rowselected{COLOR: #333333;BACKGROUND-COLOR: #DBEAF5;}
+
+.shade{COLOR: #333333;BACKGROUND-COLOR: #e5e5e5;}
+
+.blackshade{BACKGROUND-COLOR: #b5b5b5;FONT-WEIGHT: bold;}

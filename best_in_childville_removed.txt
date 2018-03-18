@@ -1,0 +1,121 @@
+Insert at line 596:
+
+===================
+
+		<table width="100%" border="0">
+          <tr>
+            <td colspan="2" align="left" 
+                bgcolor="<%= rowsSchoolTheme(0).Item("ExtensionField1") %>"><span class="pageHeaderStyleAMMA"><font color="White">&nbsp;:: Best in <%= rowsSchoolTheme(0).Item("ShortName") %> This Term</font></span></td>
+            </tr>
+          <tr>
+            <td width="150" align="center" valign="top" class="borderedTableGrey"><a>
+              <asp:Image Imageurl='' ID="imgSchoolChamp" runat="server" BorderStyle="Solid" BorderWidth="2px" Height="140px" Width="140px" ToolTip="School Champ" EnableViewState="False" /></a></td>
+            <td align="left" 
+                valign="top" class="style18"><table border="0" width="100%">
+              <tr>
+                <td class="style18"><% If rowsChampProfile.Count <> 0 Then%><%= rowsChampProfile(0).Item("FirstName").ToString & " " & rowsChampProfile(0).Item("LastName").ToString %>
+                  <% End If%></td>
+                </tr>
+              <tr>
+                <td class="style18"><% If rowsChampProfile.Count <> 0 Then%><%= rowsChampProfile(0).Item("CustomerCode").ToString %>
+                  <% End If%></td>
+                </tr>
+              <tr>
+                <td class="style18"><% If rowsChampProfile.Count <> 0 Then%><%= rowsChampProfile(0).Item("DistrictCode").ToString %>
+                  <% End If%></td>
+                </tr>
+              <tr>
+                <td class="style18"><% If rowsChampProfile.Count <> 0 Then%>GENDER: <%= Common.GetMaleOrFemale(rowsChampProfile(0).Item("SyncStatus").ToString) %>
+                  <% End If%></td>
+                </tr>
+              <tr>
+                <td class="style18"><% If rowsChampProfile.Count <> 0 Then%>BIRTHDAY: <%= Common.GetSpecialDateFormatShort(CType(rowsChampProfile(0).Item("MeterDate"), Date))%>
+                  <% End If%></td>
+                </tr>
+              <tr>
+                <td class="style18"><% If rowsChampProfile.Count <> 0 Then%>BOARDER?: <%= Common.GetYesOrNo(rowsChampProfile(0).Item("Activated").ToString) %>
+                  <% End If%></td>
+                </tr>
+              <tr>
+                <td class="style18"><hr color="black" noshade="noshade" /></td>
+                </tr>
+              <tr>
+                <td class="style18"><% If rowsChampProfile.Count <> 0 Then%>SCORE: <%= FormatNumber(Common.GetCurrentCumulativeAverage(rowsChampProfile(0).Item("CustomerCode").ToString, sessionName, currentTerm), 1).ToString%>                  <% End If%>%</td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+
+==================
+Insert at line 33:
+
+        imgSchoolChamp.ImageUrl = Common.ShowPhotograph(schoolChampImageURL, Server.MapPath(schoolChampImageURL))
+        If Common.GetSchoolChamp(sessionName, termNameForComputations) = Common.CONST_ACADEMICS_DUMMY_SCHOOL_CHAMP Then
+            imgSchoolChamp.ToolTip = "Current School Champ: " & Common.CONST_ACADEMICS_DUMMY_SCHOOL_CHAMP
+        Else
+            imgSchoolChamp.ToolTip = "Current School Champ: " & rowsChampProfile(0).Item("FirstName").ToString & " " & rowsChampProfile(0).Item("LastName").ToString & " (" & rowsChampProfile(0).Item("DistrictCode").ToString & ")"
+        End If
+
+===================
+Insert at line 654 (or Under "News Stream"):
+
+        <table width="100%" border="0">
+            <tr>
+              <td align="left" 
+                bgcolor="<%= rowsSchoolTheme(0).Item("ExtensionField1") %>"><span class="pageHeaderStyleAMMA"><font color="White">&nbsp;:: Literature Encore</font></span></td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="borderedTableGrey"><table width="100%" 
+                      border="0" cellpadding="1" cellspacing="1">
+                <% 
+		  	SN = 0
+                    For i As Int32 = 1 To rowsLiteratureEncore.Count
+                        SN = SN + 1
+%>
+                <tr>
+                  <td valign="top" colspan="2">
+				  <table width="100%" border="0" cellpadding="3" cellspacing="0">
+                    <tr>
+                      <td bgcolor='<%= Common.GetRecentActivityBackgroundColor(rowsLiteratureEncore(i).ToString.Split("|")(0) & rowsLiteratureEncore(i).ToString.Split("|")(1)) %>' valign="top" width="50"><%= rowsLiteratureEncore(i).ToString.Split("|")(0)%></td>
+                      <td valign="top"><%= rowsLiteratureEncore(i).ToString.Split("|")(2)%></td>
+                    </tr>
+                  </table></td>
+                </tr>
+                <% 
+            Next
+%>
+              </table></td>
+            </tr>
+            
+            
+          </table>
+          <table width="100%" border="0">
+            <tr>
+              <td align="left" 
+                bgcolor="<%= rowsSchoolTheme(0).Item("ExtensionField1") %>"><span class="pageHeaderStyleAMMA"><font color="White">&nbsp;:: Khan Academy</font></span></td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="borderedTableGrey"><table width="100%" 
+                      border="0" cellpadding="1" cellspacing="1">
+                <% 
+                    SN = 0
+                    For i As Int32 = 1 To rowsKhanAcademy.Count
+                    SN = SN + 1
+                %>
+                <tr>
+                  <td valign="top" colspan="2">
+				  <table width="100%" border="0" cellpadding="3" cellspacing="0">
+                    <tr>
+                      <td bgcolor='<%= Common.GetRecentActivityBackgroundColor(rowsKhanAcademy(i).ToString.Split("|")(0) & rowsKhanAcademy(i).ToString.Split("|")(1)) %>' valign="top" width="50"><%= rowsKhanAcademy(i).ToString.Split("|")(0)%></td>
+                      <td valign="top"><%= rowsKhanAcademy(i).ToString.Split("|")(2)%></td>
+                    </tr>
+                  </table></td>
+                </tr>
+                <% 
+            Next
+%>
+              </table></td>
+            </tr>
+            
+            
+          </table>          
